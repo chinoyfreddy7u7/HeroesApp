@@ -9,24 +9,21 @@ const routes: Routes=[
 {
   path:'',
   children:[
-  {  path:'Login',
+  {  path:'login',
     component:LoginComponent
   },
   {
     path:'Registro',
     component:RegistroComponent
   },
-  {
-    path:'**',
-    redirectTo:'Login'
-  }
+ 
   ]
 }
 
 ]
 
 @NgModule({
-  declarations: [],
+  
   imports: [
     RouterModule.forChild(routes)
   ],
