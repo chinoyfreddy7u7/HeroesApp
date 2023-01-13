@@ -28,7 +28,7 @@ loadChildren:() => import('./auth/auth.module').then(m =>m.AuthModule)
 @NgModule({
   imports: [
     
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes )
   ],
   exports:[
     RouterModule

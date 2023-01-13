@@ -10,7 +10,7 @@ import { HeroesHomeComponent } from './pages/heroes-home/heroes-home.component';
 
 
 
-const hroutes: Routes=[
+const rutas: Routes=[
   {
     path:'',
     component:HeroesHomeComponent,
@@ -48,7 +48,7 @@ const hroutes: Routes=[
 @NgModule({
   declarations: [],
   imports: [
-  RouterModule.forChild(hroutes)
+  RouterModule.forChild(rutas)
   ],
   exports:[
     RouterModule
