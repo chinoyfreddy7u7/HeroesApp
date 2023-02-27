@@ -8,11 +8,7 @@ import { HeroesService } from '../../services/heroes.service';
   templateUrl: './listado.component.html',
   styleUrls: ['./listado.component.css'],
   styles:[
-    `
-    mat-card{
-      margin-top:20px
-    }
-    `
+  
   ]
 })
 export class ListadoComponent implements OnInit {
