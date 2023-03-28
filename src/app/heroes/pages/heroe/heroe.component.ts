@@ -21,7 +21,7 @@ import { HeroesService } from '../../services/heroes.service';
 export class HeroeComponent implements OnInit {
     heroe!:Heroe
 
-  constructor(private activatedRouted: ActivatedRoute,
+  constructor(private activatedRoute: ActivatedRoute,
     private heroesService:HeroesService,
     private router: Router
     ) { }
@@ -29,7 +29,7 @@ export class HeroeComponent implements OnInit {
   ngOnInit(): void {
 
 
-    this.activatedRouted.params.pipe(
+    this.activatedRoute.params.pipe(
       switchMap(({id})=>this.heroesService.getHeroePorId(id))).
       subscribe(heroe=>this.heroe=heroe)
 

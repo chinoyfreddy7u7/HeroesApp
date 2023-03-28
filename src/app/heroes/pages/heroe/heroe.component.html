@@ -1,7 +1,6 @@
 <mat-grid-list cols=1 *ngIf="!heroe; else divHeroes">
     <mat-grid-tile>
     <mat-spinner>
-
     </mat-spinner> 
     </mat-grid-tile>
 </mat-grid-list>
@@ -12,11 +11,12 @@ fxLayout="row"
             fxLayout.xs="colum"
             fxLayoutGap="30px" >
         
-        <div fxFlex="50">  {{heroe.superhero}} <small>- {{heroe.alter_ego}} </small>
+        <div fxFlex="50">  
+            <h1>{{heroe.superhero}} <small>- {{heroe.alter_ego}} </small></h1>
         
             <mat-divider>
             </mat-divider>
-            <hr>
+            <br>
             <img [src]="heroe | imagen">
 
 
@@ -27,10 +27,7 @@ fxLayout="row"
         <mat-divider></mat-divider>
 
         <mat-list>
-         <mat-list-item>
-
-            {{heroe.first_appearance }}
-         </mat-list-item>
+         <mat-list-item> {{heroe.first_appearance }}</mat-list-item>
          <mat-list-item> {{heroe.characters}} </mat-list-item>
          <mat-list-item>{{heroe.publisher}} </mat-list-item>
          <mat-list-item>  {{heroe.alter_ego}} </mat-list-item> 
